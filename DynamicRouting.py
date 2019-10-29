@@ -9,5 +9,9 @@ def name(name):
 def nameUpper(name):
     return f"<h1> THIS IS A MESSAGE FOR UPPER {name.upper()}<h1>"
 
+@app.route("/name_number/<name>")
+def nameLetter(name):
+    return f"<h1> 2nd LETTER IN THE NAME {name} IS : {name[15]}"
+
 if __name__ == "__main__":
-    app.run()
+    app.run(debug = True)
