@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!-- <h1>{{mylist}}</h1> -->
+    <ul>
+      {%for item in mylist%}
+      <li>{{item}}</li>
+      {%endfor%}
+    </ul>
+
+    {%if 1 in mylist%}
+      <p>One is there !!</p>
+    {%else%}
+      <p>Couldnot find One!!</p>
+    {% endif %}
+
+  </body>
+</html>
